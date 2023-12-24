@@ -10,7 +10,6 @@ modern C++ and also provides interfaces to Python with pybind11."
 
 
 find_package(pybind11 REQUIRED)
-find_package(Python3 COMPONENTS NumPy REQUIRED)
 
 
 if (NOT (CMAKE_BUILD_TYPE OR CMAKE_CONFIGURATION_TYPES))
