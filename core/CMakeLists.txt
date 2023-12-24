@@ -38,6 +38,7 @@ pybind11_add_module(${PROJECT_NAME} MODULE
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE "${PROJECT_SOURCE_DIR}/inc"
+    PRIVATE "${numpy_INCLUDE_DIR}"
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
