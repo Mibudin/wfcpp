@@ -34,6 +34,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip3 install -r ./requirements.txt
+          sudo apt -qy install python3-numpy
 
       - name: Run building
         run: |
