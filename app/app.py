@@ -23,7 +23,7 @@ class OverlappingModelSample:
     output: ColorMap | None = None
     iter: int = 0
     total_time: float = 0.0
-    proccess_time: float = 0.0
+    process_time: float = 0.0
 
 
 class WFCppSampleConfig:
@@ -202,10 +202,10 @@ class WFCppCLI:
                     sample.input, sample.options, sample.seed)
                 sample.iter = i + 1
                 sample.total_time = -time.time()
-                sample.proccess_time = -time.process_time()
+                sample.process_time = -time.process_time()
                 sample.output = model.run()
                 sample.total_time += time.time()
-                sample.proccess_time += time.process_time()
+                sample.process_time += time.process_time()
                 if sample.output is None:
                     continue
                 success += 1
@@ -230,6 +230,9 @@ def _main() -> None:
     app.run()
     app.save_out()
     app.deinit()
+    print("Bytes:", bytes())
+    print("Allocated:", allocated())
+    print("Deallocated:", deallocated())
 
 
 if __name__ == "__main__":

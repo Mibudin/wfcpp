@@ -141,4 +141,8 @@ PYBIND11_MODULE(wfcpp, m)
                       int>(),
              "input"_a, "options"_a, "seed"_a)
         .def("run", &OverlappingModel<Color>::run);
+
+    m.def("bytes", &CustomAllocator<Color>::bytes);
+    m.def("allocated", &CustomAllocator<Color>::allocated);
+    m.def("deallocated", &CustomAllocator<Color>::deallocated);
 }

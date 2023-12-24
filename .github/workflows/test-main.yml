@@ -25,11 +25,6 @@ jobs:
           sudo apt -qy install \
             curl build-essential cmake
 
-    #   - name: Set up (Python) - 1
-    #     uses: actions/setup-python@v4
-    #     with:
-    #       python-version: "3.10"
-
       - name: Set up (Python) - 1
         run: |
           sudo apt -qy install \
