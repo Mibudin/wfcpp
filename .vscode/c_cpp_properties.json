@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                // "${workspaceFolder}/**",
+                "/usr/include/python3.10",
+                "~/.local/lib/python3.10/site-packages/pybind11/include",
+                "${workspaceFolder}/core/inc"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cppStandard": "c++20"
+        }
+    ],
+    "version": 4
+}
